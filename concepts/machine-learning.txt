@@ -1,0 +1,110 @@
+# 📚 Machine Learning: Fundamentos e Conceitos
+
+Machine Learning (ML) é um campo da Inteligência Artificial (IA) que permite que máquinas **aprendam a partir de dados** sem serem explicitamente programadas para cada tarefa.
+
+Em vez de escrever passo a passo o que deve ser feito, você **fornece exemplos**, e o modelo **aprende sozinho a identificar padrões**.
+
+---
+
+## 🧠 Como funciona?
+
+1. **Coleta de dados**
+2. **Treina o modelo com os dados**
+3. **Testa com novos dados**
+
+---
+
+## 🧪 Tipos de Aprendizado
+
+### 🔷 Supervisionado
+
+Você fornece **dados com rótulos (labels)**. O modelo aprende a prever os rótulos com base nas entradas.
+
+#### 🔸 Tarefas comuns:
+
+- **Classificação**: prever classes discretas.
+  - Ex: Gato vs. Cachorro, Tipos de frutas
+  - Pode ser **binária** (2 classes) ou **multiclasse**
+  
+- **Regressão**: prever valores contínuos (números reais).
+  - Ex: Temperatura, Preço de uma casa
+
+---
+
+### 🔷 Não Supervisionado
+
+Você fornece **dados sem rótulos**, e o modelo tenta **descobrir padrões ou agrupamentos** por conta própria.
+
+---
+
+### 🔷 Aprendizado por Reforço
+
+O modelo aprende com **tentativa e erro**, recebendo **recompensas** ou **penalidades** com base nas decisões que toma.
+
+---
+
+## ⚙️ O que é um Modelo?
+
+Um **modelo** é uma função que:
+
+- Recebe entradas (features)
+- Processa essas entradas
+- Retorna uma saída (previsão)
+
+Durante o **aprendizado**, o modelo:
+
+1. Recebe dados de entrada
+2. Faz uma previsão
+3. Compara com o valor real
+4. Ajusta seus parâmetros para melhorar com base na **função de perda (loss)**
+
+---
+
+## ❌ Funções de Perda (Loss Functions)
+
+A função de perda mede o **erro da previsão** comparado ao valor verdadeiro.
+
+- **L1 Loss (Erro Absoluto Médio)**:
+Loss = sum(| y_real - y_previsto |)
+
+- **L2 Loss (Erro Quadrático Médio)**:
+Loss = sum(( y_real - y_previsto )²)
+---
+
+## ✅ Métricas
+
+- **Accuracy (Acurácia)**: porcentagem de previsões corretas (muito usada em classificação)
+
+---
+
+## 🔁 Divisão dos Dados
+
+- **Treinamento**: usado para ajustar o modelo (tem feedback do loss)
+- **Validação**: avalia o modelo em dados **nunca vistos** durante o treino (sem feedback)
+- **Teste**: avaliação final, simula o uso real do modelo com dados totalmente novos
+
+---
+
+## 🧾 Tipos de Dados (Features)
+
+### 📊 Qualitativos (Categóricos)
+
+- Representam **categorias** distintas
+- Ex: Gênero, Nacionalidade
+
+#### ➤ One-hot Encoding:
+Transforma categorias em vetores numéricos:
+```text
+Ex: Gênero (Masculino, Feminino)
+→ [1, 0] ou [0, 1]
+Nominais: sem ordem natural entre os valores (ex: cor dos olhos)
+
+Ordinais: com ordem natural (ex: bebê < jovem < adulto)
+
+🔢 Quantitativos (Numéricos)
+Valores que representam quantidades
+
+Podem ser:
+
+-Discretos: número de filhos, andares
+-Contínuos: temperatura, altura, distância
