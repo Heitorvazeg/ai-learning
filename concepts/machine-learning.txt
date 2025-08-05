@@ -1,6 +1,7 @@
 # 📚 Machine Learning: Fundamentos e Conceitos
 
-Machine Learning (ML) é um campo da Inteligência Artificial (IA) que permite que máquinas **aprendam a partir de dados** sem serem explicitamente programadas para cada tarefa.
+Machine Learning (ML) é um campo da Inteligência Artificial (IA) que permite que máquinas **aprendam a partir de dados**
+ sem serem explicitamente programadas para cada tarefa.
 
 Em vez de escrever passo a passo o que deve ser feito, você **fornece exemplos**, e o modelo **aprende sozinho a identificar padrões**.
 
@@ -73,7 +74,7 @@ Loss = sum(( y_real - y_previsto )²)
 
 ## ✅ Métricas
 
-- **Accuracy (Acurácia)**: porcentagem de previsões corretas (muito usada em classificação)
+- **Accuracy (Precisão)**: porcentagem de previsões corretas (muito usada em classificação)
 
 ---
 
