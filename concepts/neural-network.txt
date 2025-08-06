@@ -1,0 +1,62 @@
+# 🤖 Redes Neurais (Neural Networks)
+
+Redes neurais são **modelos de aprendizado de máquina** inspirados no **cérebro humano**,
+ compostos por **neurônios artificiais** que aprendem a reconhecer padrões a partir de dados.
+
+---
+
+## 🧠 Estrutura Básica
+
+- **Camada de entrada (Input Layer)**  
+  Recebe os dados brutos de entrada.
+
+- **Camadas ocultas (Hidden Layers)**  
+  Realizam cálculos com **pesos** e aplicam **funções de ativação** para extrair padrões.
+
+- **Camada de saída (Output Layer)**  
+  Fornece a **resposta final** do modelo.
+
+---
+
+## 🔹 Neurônio
+
+- Cada **neurônio** recebe um valor entre `0` e `1`, chamado de **Activation**.
+- A ativação representa **o quão "ativo" (positivo)** aquele neurônio está em relação ao padrão que ele reconhece.
+
+### Elementos-chave:
+- **Peso (Weight):** Intensidade da conexão entre neurônios.
+- **Bias (Viés):** Valor adicional que define o quão alto o sinal precisa ser para "fazer sentido".
+- **Função de ativação:** Garante que os valores fiquem dentro de um intervalo (ex: `sigmoid`, que força os valores entre 0 e 1).
+
+---
+
+## 🎯 Como a rede aprende?
+
+O processo de **aprendizado (learning)** é encontrar a **quantidade certa de ativação** entre os neurônios.
+ Isso é feito através de algoritmos como:
+
+- **Propagação para frente (forward propagation)**:  
+  Os dados passam camada por camada até a saída.
+
+- **Cálculo do erro**:  
+  A saída gerada é comparada com a saída correta (esperada).
+
+- **Retropropagação (backpropagation)**:  
+  O erro é distribuído para os neurônios anteriores e os **pesos são ajustados** com base nesse erro.
+
+---
+
+## 🧩 Exemplo de Aplicação
+
+Imagine uma rede neural que reconhece **números manuscritos** com base em **pixels** de uma imagem:
+
+- Os **neurônios da entrada** recebem os pixels.
+- As **camadas ocultas** detectam padrões como linhas, curvas, cantos.
+- A **última camada** determina **qual número está na tela**.
+
+Para reforçar o aprendizado:
+- A rede aplica **pesos positivos** para padrões desejados.
+- Aplica **pesos negativos** ao que está fora do padrão.
+- A **função sigmoid** garante que as ativações fiquem entre 0 e 1.
+
+---

@@ -1,0 +1,81 @@
+# Modelos de Machine Learning
+
+## k-Nearest Neighbors (KNN)
+
+- Utiliza um plano cartesiano para analisar dados.
+- Cada ponto representa alguma característica, e sua posição no plano reflete detalhes que podem causar determinada característica.
+- Os vizinhos mais próximos são considerados porque pontos próximos no plano tendem a ser parecidos.
+- A distância entre pontos é importante para determinar a proximidade.
+
+### Distância Euclidiana
+- É a distância entre dois pontos no espaço.
+- Fórmula da distância entre pontos:
+
+d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+
+- O valor de **K** representa a quantidade de vizinhos usados na análise.
+- Exemplo: Se \( K = 3 \), a análise considera os 3 pontos mais próximos.
+- Pode ser extrapolado para espaços de múltiplas dimensões (ex: tridimensional).
+
+---
+
+## Naive Bayes
+
+- Baseado na **Regra de Bayes**.
+- É uma suposição ingênua sobre a probabilidade dos eventos.
+- Regra de Bayes:
+
+
+P(A|B) = {P(B|A) * P(A)}/{P(B)}
+
+
+- \( P(A|B) \): probabilidade de \( A \) acontecer dado que \( B \) ocorreu.
+- Para cada classe, calcula a probabilidade de os dados analisados pertencerem a ela e escolhe a classe com maior probabilidade.
+- Supõe que todas as features são independentes entre si (o que nem sempre é verdade).
+
+---
+
+## 📈 Logistic Regression
+
+A **Regressão Logística** é um algoritmo usado para **prever a probabilidade de ocorrência de um evento binário**,
+ ou seja, algo que tem apenas duas possíveis saídas (ex: 0 ou 1, verdadeiro ou falso, positivo ou negativo).
+
+### ✳️ Características
+
+- Algoritmo **supervisionado**.
+- Utiliza **variáveis independentes** para prever a probabilidade de um resultado binário.
+- Aplica a **função sigmoide** para mapear os valores de entrada em uma **probabilidade entre 0 e 1**.
+
+### 📌 Fórmula da Sigmoid
+
+```math
+S(y) = \frac{1}{1 + e^{-y}}
+
+# 📊 Support Vector Machines (SVM)
+
+**Support Vector Machines (SVM)** são algoritmos de aprendizado de máquina **supervisionados** usados principalmente para **classificação** e, em alguns casos, para **regressão**.
+
+---
+
+## 🧠 Intuição
+
+O objetivo do SVM é encontrar **uma linha (em 2D)** ou **hiperplano (em n dimensões)** que **melhor separa duas classes**.
+
+- Essa linha deve dividir os dados de forma que cada classe fique de um lado.
+- O SVM **procura o “meio perfeito”** entre as classes.
+- Se a linha estiver mais próxima de uma das classes, a previsão pode piorar.
+
+---
+
+## 📐 Margem
+
+A **margem** é a distância entre o hiperplano (linha de separação) e os pontos de cada classe mais próximos a ele (chamados de **vetores de suporte**).
+
+- O SVM **tenta maximizar essa margem**.
+- Uma **margem maior** geralmente significa uma **melhor generalização**.
+
+---
+
+## 🎯 Kernel Trick
+
+O **Kernel Trick** é uma técnica que permite ao SVM lidar com dados **não linearmente separáveis**, ou seja, dados que não podem ser separados por uma linha reta no espaço original.
