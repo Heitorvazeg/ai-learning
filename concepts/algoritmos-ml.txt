@@ -35,29 +35,30 @@ P(A|B) = {P(B|A) * P(A)}/{P(B)}
 
 ---
 
-## 📈 Logistic Regression
+## Logistic Regression
 
 A **Regressão Logística** é um algoritmo usado para **prever a probabilidade de ocorrência de um evento binário**,
  ou seja, algo que tem apenas duas possíveis saídas (ex: 0 ou 1, verdadeiro ou falso, positivo ou negativo).
 
-### ✳️ Características
+### Características
 
 - Algoritmo **supervisionado**.
 - Utiliza **variáveis independentes** para prever a probabilidade de um resultado binário.
 - Aplica a **função sigmoide** para mapear os valores de entrada em uma **probabilidade entre 0 e 1**.
 
-### 📌 Fórmula da Sigmoid
+### Fórmula dE Sigmoid
 
 ```math
 S(y) = \frac{1}{1 + e^{-y}}
 
-# 📊 Support Vector Machines (SVM)
+# Support Vector Machines (SVM)
 
-**Support Vector Machines (SVM)** são algoritmos de aprendizado de máquina **supervisionados** usados principalmente para **classificação** e, em alguns casos, para **regressão**.
+**Support Vector Machines (SVM)** são algoritmos de aprendizado de máquina **supervisionados** usados principalmente para **classificação** e,
+ em alguns casos, para **regressão**.
 
 ---
 
-## 🧠 Intuição
+## Intuição
 
 O objetivo do SVM é encontrar **uma linha (em 2D)** ou **hiperplano (em n dimensões)** que **melhor separa duas classes**.
 
@@ -67,15 +68,17 @@ O objetivo do SVM é encontrar **uma linha (em 2D)** ou **hiperplano (em n dimen
 
 ---
 
-## 📐 Margem
+## Margem
 
-A **margem** é a distância entre o hiperplano (linha de separação) e os pontos de cada classe mais próximos a ele (chamados de **vetores de suporte**).
+A **margem** é a distância entre o hiperplano (linha de separação) e os pontos de cada classe mais próximos
+ a ele (chamados de **vetores de suporte**).
 
 - O SVM **tenta maximizar essa margem**.
 - Uma **margem maior** geralmente significa uma **melhor generalização**.
 
 ---
 
-## 🎯 Kernel Trick
+## Kernel Trick
 
-O **Kernel Trick** é uma técnica que permite ao SVM lidar com dados **não linearmente separáveis**, ou seja, dados que não podem ser separados por uma linha reta no espaço original.
+O **Kernel Trick** é uma técnica que permite ao SVM lidar com dados **não linearmente separáveis**, ou seja,
+ dados que não podem ser separados por uma linha reta no espaço original.

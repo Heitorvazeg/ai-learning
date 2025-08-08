@@ -35,6 +35,7 @@ Você fornece **dados com rótulos (labels)**. O modelo aprende a prever os rót
 ### 🔷 Não Supervisionado
 
 Você fornece **dados sem rótulos**, e o modelo tenta **descobrir padrões ou agrupamentos** por conta própria.
+Unsupervised Clustering -> Assume grupos ao mundo.
 
 ---
 

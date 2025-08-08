@@ -64,3 +64,26 @@ y_pred = knn_model.predict(x_train)
 
 # Implementa classification_report para avaliar o modelo
 print(classification_report(y_train, y_pred))
+
+# Implementação de Naive Bayes
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import classification_report
+
+nb_model = GaussianNB()
+nb_model = nb_model.fit(x_train, y_train)
+
+y_pred = nb_model.predict(x_train)
+print(classification_report(y_train, y_pred))
+
+# Usando TensorFlow para rede neural
+import tensorflow as tf
+
+nn_model = tf.keras.Sequential([
+    tf.keras.layers.Dense(16, activation='relu', input_shape=(10,)),
+    tf.keras.layers.Dense(16, activation='relu'),
+    tf.keras.layers.Dense(1, activation='sigmoid')
+])
+
+nn_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+history = nn_model.fit(x_train, y_train, epochs=10, batch_size=32, validation_split=0.2)

@@ -27,6 +27,7 @@ Redes neurais são **modelos de aprendizado de máquina** inspirados no **céreb
 - **Peso (Weight):** Intensidade da conexão entre neurônios.
 - **Bias (Viés):** Valor adicional que define o quão alto o sinal precisa ser para "fazer sentido".
 - **Função de ativação:** Garante que os valores fiquem dentro de um intervalo (ex: `sigmoid`, que força os valores entre 0 e 1).
+Sem função de ativação, redes neurais se tornam lineares; apenas somam valores.
 
 ---
 
@@ -43,6 +44,16 @@ O processo de **aprendizado (learning)** é encontrar a **quantidade certa de at
 
 - **Retropropagação (backpropagation)**:  
   O erro é distribuído para os neurônios anteriores e os **pesos são ajustados** com base nesse erro.
+  Descer o Loss que é uma função quadrática.
+  w0.new = w0.old + a* -> calculo de pesos apos pegar a loss.
+
+  o "custo" pega os valores finais de cada neorônio e faz: (valor - esperado)^2
+  Soma todos os custos. Quando maior a distância do valor ao valor esperado maior será o
+  custo e assim maior será a mudança dos pesos. Quanto menor, menor.
+
+  Aprender é apenas diminuir o custo.
+
+  Gradient of the cost -> Quanto cada nó deve mudar para chegar ao resultado.
 
 ---
 
@@ -58,5 +69,11 @@ Para reforçar o aprendizado:
 - A rede aplica **pesos positivos** para padrões desejados.
 - Aplica **pesos negativos** ao que está fora do padrão.
 - A **função sigmoid** garante que as ativações fiquem entre 0 e 1.
+
+---
+
+## TensorFlow:
+- Open Source library que ajuda a implementar algoritmos ML.
+- Utilizado muito para redes neurais.
 
 ---
