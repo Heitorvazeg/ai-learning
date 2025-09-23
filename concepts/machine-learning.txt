@@ -36,7 +36,43 @@ Você fornece **dados com rótulos (labels)**. O modelo aprende a prever os rót
 
 Você fornece **dados sem rótulos**, e o modelo tenta **descobrir padrões ou agrupamentos** por conta própria.
 Unsupervised Clustering -> Assume grupos ao mundo.
+A representação do mundo pode ser a função.
+Com imagens: Representation learning.
 
+Mais complexo; analisa em tempo real; precisão moderada.
+Anomaly Detection: Acha casos que fogem muito aos grupos padrões.
+
+Partitional Clustering: Divide os dados em conjuntos que não se sobrepoem. Partições.
+  - Rápido.
+  - Fácil de interpretar.
+  - Precisa definir K antes.
+  - Sem hierarquia
+  - Busca minimizar alguma função de custo, geralmente relacionada à distância dos pontos
+  aos centro do cluster.
+
+  Algoritmos:
+  K-means -> Escolhe K, o número de clusters. Inicia K centróides (Números que representam
+  cada cluster). atribuição de pontos aos clusters cujo centróide está mais próximo. Recalcula
+  os centróides com a média de todos os pontos. Repete.
+  - Os centróides podem ser alguns próprios pontos. Ponto médio de um cluster. Não é necessariamente
+  um ponto do cluster.
+
+Hierarchical Clustering: Uma árvore que tem um conjunto de agrupamentos.
+  - É necessário calcular a distância entre clusters para encontrar os mais proximos e agrupá-los.
+  - Utiliza-se uma matriz de distâncias.
+  - A distância entre pontos pode ser Euclidiana, manhattan...
+  - Distância entre Clusters: Como vai ser medida a distãncia...
+  Single linkage - Distância minima entre dois pontos dos clusters. Complete linkage - Distân-
+  cia máxima. Average linkage - Distancia média entre todos os pontos...
+
+  - O(n^3) - Custoso.
+  - Não precisa definir o número de clusters inicialmente.
+
+  Aglomerativo: Mais comum. Começa cada um sendo seu proprio conjunto. Os agrupamentos
+  mais proximos são fundidos. Árvore chamada de dendrograma. Abordagem bottom-up.
+
+  Divisivo: Todos os pontos começam em um único agrupamento e são divididos. Menos usado
+  por ser mais custoso.
 ---
 
 ### 🔷 Aprendizado por Reforço
