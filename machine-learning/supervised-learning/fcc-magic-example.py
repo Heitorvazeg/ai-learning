@@ -48,7 +48,7 @@ def scale_dataset(dataframe, oversample=False):
 
 # Chama scale_dataset para cada conjunto de dados
 train, x_train, y_train = scale_dataset(train, oversample=True)
-valid, x_valid, y_valid = (scale_dataset(valid, oversample=False))
+valid, x_valid, y_valid = scale_dataset(valid, oversample=False)
 test, x_test, y_test = scale_dataset(test, oversample=False)
 
 # Implementação de K-Nearest Neighbors
